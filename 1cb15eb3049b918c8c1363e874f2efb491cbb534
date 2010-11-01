@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAA8H//9qE\u003d",
+        "filename": "pngconf.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 1508,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2010-11-01T22:10:47Z",
+      "side": 1,
+      "message": "do we really need to support GCC \u003c 3.3?",
+      "revId": "1cb15eb3049b918c8c1363e874f2efb491cbb534",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
