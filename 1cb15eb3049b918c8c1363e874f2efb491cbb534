@@ -16,6 +16,24 @@
       "revId": "1cb15eb3049b918c8c1363e874f2efb491cbb534",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAA9n///Xw\u003d",
+        "filename": "pngconf.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 1508,
+      "author": {
+        "id": 1000660
+      },
+      "writtenOn": "2010-11-20T02:54:36Z",
+      "side": 1,
+      "message": "I\u0027d argue that setting the limit at gcc 4 like the rest of the file seems to might be enough in case we ever want that code upstreamed.",
+      "parentUuid": "AAAA8H//9qE\u003d",
+      "revId": "1cb15eb3049b918c8c1363e874f2efb491cbb534",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
