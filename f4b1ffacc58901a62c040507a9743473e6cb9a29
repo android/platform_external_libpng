@@ -1,0 +1,8 @@
+Change-Id: If4b1ffacc58901a62c040507a9743473e6cb9a29
+Code-Review+2: Jean-Baptiste Queru <jbq@google.com>
+Verified+1: Jean-Baptiste Queru <jbq@google.com>
+Submitted-by: Jean-Baptiste Queru <jbq@google.com>
+Submitted-at: Wed, 18 Mar 2009 18:05:10 -0700
+Reviewed-on: https://review.source.android.com/9278
+Project: platform/external/libpng
+Branch: refs/heads/master
