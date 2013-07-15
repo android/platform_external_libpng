@@ -1388,7 +1388,9 @@ png_read_destroy(png_structp png_ptr, png_infop info_ptr,
 #ifdef PNG_USER_MEM_SUPPORTED
    png_free_ptr free_fn;
 #endif
-
+#ifdef PNG_INDEX_SUPPORTED
+   png_indexp indexp;
+#endif
    png_debug(1, "in png_read_destroy");
  
    if (info_ptr != NULL)
@@ -1506,7 +1508,9 @@ png_read_destroy(png_structp png_ptr, png_infop info_ptr,
 #ifdef PNG_USER_MEM_SUPPORTED
    free_fn = png_ptr->free_fn;
 #endif
-
+#ifdef PNG_INDEX_SUPPORTED
+   indexp = png_ptr->index;
+#endif
    png_memset(png_ptr, 0, png_sizeof(png_struct));
 
    png_ptr->error_fn = error_fn;
@@ -1514,6 +1518,9 @@ png_read_destroy(png_structp png_ptr, png_infop info_ptr,
    png_ptr->error_ptr = error_ptr;
 #ifdef PNG_USER_MEM_SUPPORTED
    png_ptr->free_fn = free_fn;
+#endif
+#ifdef PNG_INDEX_SUPPORTED
+   png_ptr->index = indexp;
 #endif
 
 #ifdef PNG_SETJMP_SUPPORTED
