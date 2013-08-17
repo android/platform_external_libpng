@@ -22,7 +22,19 @@ common_SRC_FILES := \
 	pngwtran.c \
 	pngwutil.c
 
-common_CFLAGS := -std=gnu89 -fvisibility=hidden ## -fomit-frame-pointer
+common_CFLAGS := -std=gnu89 -fvisibility=hidden
+
+ifeq ($(TARGET_ARCH),arm)
+    ifeq ($(ARCH_ARM_HAVE_NEON),true)
+        common_SRC_FILES += \
+            arm/arm_init.c \
+            arm/filter_neon.S
+    # Allow undefined symbols when arm specific
+    # neon optimized functions are utilized.
+    # Upstream libpng 1.6 has the same behavior.
+    LIBPNG_ARM_NEON_OPT := true
+    endif
+endif
 
 ifeq ($(HOST_OS),windows)
   ifeq ($(USE_MINGW),)
@@ -36,7 +48,7 @@ endif
 common_C_INCLUDES += 
 
 common_COPY_HEADERS_TO := libpng
-common_COPY_HEADERS := png.h pngconf.h pngusr.h
+common_COPY_HEADERS := png.h pngconf.h pnglibconf.h pngpriv.h pngstruct.h pngusr.h
 
 # For the host
 # =====================================================
@@ -46,6 +58,10 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(common_SRC_FILES)
 LOCAL_CFLAGS += $(common_CFLAGS)
 LOCAL_C_INCLUDES += $(common_C_INCLUDES) external/zlib
+
+ifeq ($(LIBPNG_ARM_NEON_OPT),true)
+  LOCAL_ALLOW_UNDEFINED_SYMBOLS := true
+endif
 
 LOCAL_MODULE:= libpng
 
@@ -67,6 +83,10 @@ LOCAL_C_INCLUDES += $(common_C_INCLUDES) \
 LOCAL_SHARED_LIBRARIES := \
 	libz
 
+ifeq ($(LIBPNG_ARM_NEON_OPT),true)
+  LOCAL_ALLOW_UNDEFINED_SYMBOLS := true
+endif
+
 LOCAL_MODULE:= libpng
 
 LOCAL_COPY_HEADERS_TO := $(common_COPY_HEADERS_TO)
@@ -80,6 +100,11 @@ include $(BUILD_STATIC_LIBRARY)
 include $(CLEAR_VARS)
 LOCAL_C_INCLUDES:= $(common_C_INCLUDES) external/zlib
 LOCAL_SRC_FILES:= $(common_SRC_FILES) pngtest.c
+
+ifeq ($(LIBPNG_ARM_NEON_OPT),true)
+  LOCAL_ALLOW_UNDEFINED_SYMBOLS := true
+endif
+
 LOCAL_MODULE := pngtest
 LOCAL_SHARED_LIBRARIES:= libz
 LOCAL_MODULE_TAGS := debug
