@@ -1313,6 +1313,27 @@ png_destroy_read_struct(png_structpp png_ptr_ptr, png_infopp info_ptr_ptr,
    if (end_info_ptr_ptr != NULL)
       end_info_ptr = *end_info_ptr_ptr;
 
+   if (png_ptr != NULL) {
+#ifdef PNG_INDEX_SUPPORTED
+      if (png_ptr->index) {
+          unsigned int i, p;
+          png_indexp index = png_ptr->index;
+          for (p = 0; p < 7; p++) {
+              for (i = 0; i < index->size[p]; i++) {
+                  inflateEnd(index->pass_line_index[p][i]->z_state);
+                  png_free(png_ptr, index->pass_line_index[p][i]->z_state);
+                  png_free(png_ptr, index->pass_line_index[p][i]->prev_row);
+                  png_free(png_ptr, index->pass_line_index[p][i]);
+              }
+              if (index->size[p] != 0) {
+                  png_free(png_ptr, index->pass_line_index[p]);
+              }
+          }
+          png_free(png_ptr, index);
+      }
+#endif
+   }
+
    png_read_destroy(png_ptr, info_ptr, end_info_ptr);
 
    if (info_ptr != NULL)
@@ -1346,24 +1367,6 @@ png_destroy_read_struct(png_structpp png_ptr_ptr, png_infopp info_ptr_ptr,
 
    if (png_ptr != NULL)
    {
-#ifdef PNG_INDEX_SUPPORTED
-      if (png_ptr->index) {
-         unsigned int i, p;
-         png_indexp index = png_ptr->index;
-         for (p = 0; p < 7; p++) {
-            for (i = 0; i < index->size[p]; i++) {
-               inflateEnd(index->pass_line_index[p][i]->z_state);
-               png_free(png_ptr, index->pass_line_index[p][i]->z_state);
-               png_free(png_ptr, index->pass_line_index[p][i]->prev_row);
-               png_free(png_ptr, index->pass_line_index[p][i]);
-            }
-            if (index->size[p] != 0) {
-               png_free(png_ptr, index->pass_line_index[p]);
-            }
-         }
-         png_free(png_ptr, index);
-      }
-#endif
 #ifdef PNG_USER_MEM_SUPPORTED
       png_destroy_struct_2((png_voidp)png_ptr, (png_free_ptr)free_fn,
           (png_voidp)mem_ptr);
