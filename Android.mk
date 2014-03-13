@@ -29,11 +29,11 @@ ifeq ($(HOST_OS),windows)
     # Case where we're building windows but not under linux (so it must be cygwin)
     # In this case, gcc cygwin doesn't recognize -fvisibility=hidden
     $(info libpng: Ignoring gcc flag $(common_CFLAGS) on Cygwin)
-    common_CFLAGS := 
+    common_CFLAGS :=
   endif
 endif
 
-common_C_INCLUDES += 
+common_C_INCLUDES +=
 
 common_COPY_HEADERS_TO := libpng
 common_COPY_HEADERS := png.h pngconf.h pngusr.h
@@ -82,6 +82,8 @@ LOCAL_C_INCLUDES += $(common_C_INCLUDES) \
 	external/zlib
 LOCAL_SHARED_LIBRARIES := \
 	libz
+
+LOCAL_STATIC_LIBRARIES := libcompiler_rt-extras
 
 LOCAL_MODULE:= libpng
 
