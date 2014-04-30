@@ -21,19 +21,30 @@ common_SRC_FILES := \
 	pngwutil.c \
 
 # Previously these arm-specific flags were never applied.
-# TODO: apply the flags and fix the build.
-# my_cflags_arm := -DPNG_ARM_NEON_OPT=2 -DPNG_ARM_NEON_CHECK_SUPPORTED
-my_cflags_arm :=
+
+my_cflags_arm := -DPNG_ARM_NEON_CHECK_SUPPORTED
+
+#my_cflags_arm :=
 
 # BUG: http://llvm.org/PR19472 - SLP vectorization (on ARM at least) crashes
 # when we can't lower a vectorized bswap.
-my_cflags_arm += -fno-slp-vectorize
+my_cflags_arm += -fno-slp-vectorize 
 
+# filter_neon_intrinsics.c requires -mfpu=neon
 my_src_files_arm := \
-    arm/arm_init.c \
-    arm/filter_neon.S \
-    arm/filter_neon_intrinsics.c
+    arm/arm_init.c
 
+
+ifeq ($(ARCH_ARM_HAVE_NEON),true)
+	my_cflags_arm += -DPNG_ARM_NEON_OPT=1
+	my_src_files_arm += \
+		arm/filter_neon_intrinsics.c
+else
+#handcoded assembly source to be used
+	my_cflags_arm += -DPNG_ARM_NEON_OPT=2
+	my_src_files_arm +=\
+		arm/filter_neon.c
+endif
 
 common_CFLAGS := -std=gnu89 #-fvisibility=hidden ## -fomit-frame-pointer
 
@@ -83,8 +94,8 @@ LOCAL_SRC_FILES := $(common_SRC_FILES)
 LOCAL_CFLAGS += $(common_CFLAGS) -ftrapv
 LOCAL_CFLAGS_arm := $(my_cflags_arm)
 LOCAL_ASFLAGS += $(common_ASFLAGS)
+LOCAL_ASFLAGS_arm += $(my_cflags_arm)
 LOCAL_SRC_FILES_arm := $(my_src_files_arm)
-
 LOCAL_C_INCLUDES += $(common_C_INCLUDES) \
 	external/zlib
 LOCAL_SHARED_LIBRARIES := \
@@ -103,6 +114,7 @@ LOCAL_SRC_FILES := $(common_SRC_FILES)
 LOCAL_CFLAGS += $(common_CFLAGS) -ftrapv
 LOCAL_CFLAGS_arm := $(my_cflags_arm)
 LOCAL_ASFLAGS += $(common_ASFLAGS)
+LOCAL_ASFLAGS_arm += $(my_cflags_arm)
 LOCAL_SRC_FILES_arm := $(my_src_files_arm)
 
 LOCAL_C_INCLUDES += $(common_C_INCLUDES) \
