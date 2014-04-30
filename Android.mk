@@ -31,7 +31,8 @@ my_cflags_arm += -fno-slp-vectorize
 
 my_src_files_arm := \
     arm/arm_init.c \
-    arm/filter_neon.S
+    arm/filter_neon.S \
+    arm/filter_neon_intrinsics.c
 
 
 common_CFLAGS := -std=gnu89 #-fvisibility=hidden ## -fomit-frame-pointer
