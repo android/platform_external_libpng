@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a66bc13_9e557d31",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1010671
+      },
+      "writtenOn": "2014-05-02T16:50:22Z",
+      "side": 1,
+      "message": "Can the NEON path in libpng not be done entirely with runtime detection? I would vastly prefer that as it is far more useful for anyone who wants to include a build of libpng in their app with the NDK.\n\nThis needs to not break on devices that don\u0027t have NEON.",
+      "range": {
+        "startLine": 31,
+        "startChar": 36,
+        "endLine": 31,
+        "endChar": 46
+      },
+      "revId": "e3da62418f5a1b062fadaef844052a2cb4fcae35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
