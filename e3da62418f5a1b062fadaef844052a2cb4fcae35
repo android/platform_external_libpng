@@ -22,6 +22,30 @@
       "revId": "e3da62418f5a1b062fadaef844052a2cb4fcae35",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4a66bc13_81f1a0bd",
+        "filename": "Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1003723
+      },
+      "writtenOn": "2014-05-02T17:07:27Z",
+      "side": 1,
+      "message": "if we aren\u0027t doing runtime detection, I\u0027m pretty sure you can\u0027t just force neon on. looking at \n\nbuild/core/combo/arch/arm/armv7-a-neon.mk\n\nit looks like it will automaticly set -mfpu\u003dneon if it is supported anyway. if you need to conditionally switch src unconditionally, I see in other Android.mk files use conditions like:\n\nifeq ($(ARCH_ARM_HAVE_VFP),true)\n\nifeq ($(ARCH_ARM_HAVE_ARMV7A),true)\n\nifneq ($(filter $(TARGET_ARCH_ABI), armeabi-v7a armeabi-v7a-hard),)\n\nthough armv7-a-neon.mk sets:\n\nARCH_ARM_HAVE_ARMV7A            :\u003d true\nARCH_ARM_HAVE_VFP               :\u003d true\nARCH_ARM_HAVE_VFP_D32           :\u003d true\nARCH_ARM_HAVE_NEON              :\u003d true\n\nand ARCH_ARM_HAVE_NEON seems the most appropriate.",
+      "parentUuid": "4a66bc13_9e557d31",
+      "range": {
+        "startLine": 31,
+        "startChar": 36,
+        "endLine": 31,
+        "endChar": 46
+      },
+      "revId": "e3da62418f5a1b062fadaef844052a2cb4fcae35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
