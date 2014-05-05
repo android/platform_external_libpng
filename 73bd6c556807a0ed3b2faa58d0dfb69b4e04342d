@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6a346007_81e0da35",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-05-05T18:12:42Z",
+      "side": 1,
+      "message": "remove this line",
+      "revId": "73bd6c556807a0ed3b2faa58d0dfb69b4e04342d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8aba749a_5fa92fb0",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-05-05T18:12:42Z",
+      "side": 1,
+      "message": "ws",
+      "revId": "73bd6c556807a0ed3b2faa58d0dfb69b4e04342d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8aba749a_7fae73bb",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-05-05T18:12:42Z",
+      "side": 1,
+      "message": "ws",
+      "revId": "73bd6c556807a0ed3b2faa58d0dfb69b4e04342d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8aba749a_1fa3b7d2",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-05-05T18:12:42Z",
+      "side": 1,
+      "message": "ws",
+      "revId": "73bd6c556807a0ed3b2faa58d0dfb69b4e04342d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a2fd4b4_08a86bfe",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-05-05T18:12:42Z",
+      "side": 1,
+      "message": "ws",
+      "revId": "73bd6c556807a0ed3b2faa58d0dfb69b4e04342d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a2fd4b4_08818b70",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-05-05T18:12:42Z",
+      "side": 1,
+      "message": "my_src_files_arm64 is unused?",
+      "revId": "73bd6c556807a0ed3b2faa58d0dfb69b4e04342d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8a2fd4b4_e82b87b1",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-05-05T18:12:42Z",
+      "side": 1,
+      "message": "That would apply  $(my_cflags_arm) to all other archs.\nUse \tLOCAL_ASFLAGS_arm instead.",
+      "revId": "73bd6c556807a0ed3b2faa58d0dfb69b4e04342d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8aba749a_df5aff07",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2014-05-05T18:12:42Z",
+      "side": 1,
+      "message": "ditto.",
+      "revId": "73bd6c556807a0ed3b2faa58d0dfb69b4e04342d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
