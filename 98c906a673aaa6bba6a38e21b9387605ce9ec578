@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ca71cc8d_a95ac52a",
+        "filename": "Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1010103
+      },
+      "writtenOn": "2014-05-15T16:10:44Z",
+      "side": 1,
+      "message": "This should always be set to 2, and both arm/filter_neon.S and arm/filter_neon_intrisics.c should always be included as source files. pngpriv.h sets PNG_ARM_NEON_IMPLEMENTATION to 1 or 2 to pick which one to use based off of __ARM_NEON__",
+      "range": {
+        "startLine": 33,
+        "startChar": 20,
+        "endLine": 33,
+        "endChar": 36
+      },
+      "revId": "98c906a673aaa6bba6a38e21b9387605ce9ec578",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
