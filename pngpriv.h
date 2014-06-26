@@ -148,7 +148,7 @@
     * libpng implementation list for incorporation in the next minor release.
     */
 #  ifndef PNG_ARM_NEON_IMPLEMENTATION
-#     ifdef __ARM_NEON__
+#     if defined __ARM_NEON__ || defined __ARM_NEON
 #        if defined(__clang__)
             /* At present it is unknown by the libpng developers which versions
              * of clang support the intrinsics, however some or perhaps all
