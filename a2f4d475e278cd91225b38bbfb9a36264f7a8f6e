@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e472491f_6e58432f",
+        "filename": "pngpriv.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2014-06-26T09:20:38Z",
+      "side": 1,
+      "message": "Has this patch been submitted upstream ? If not, are you planning to submit this upstream ? If yes, please reference the upstream patch in your commit message.",
+      "revId": "a2f4d475e278cd91225b38bbfb9a36264f7a8f6e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
