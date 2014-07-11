@@ -16,6 +16,24 @@
       "revId": "e853a09d3926288fe9b9e73dc4bcd7e830316166",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f97cb4a5_0f65b994",
+        "filename": "arm/arm_init.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1037066
+      },
+      "writtenOn": "2014-07-11T10:24:52Z",
+      "side": 1,
+      "message": "As per ARM ARM, ARMv8 aarch64 need not have NEON.  In practice, an AArch64 device running Android is expected to have NEON. This may change in the future, as Android is used on other form factors. Hence, I would recommend to dynamically detect rather than assume, both in Android and  in the upstream.\n\nPlease have a look at https://android-review.googlesource.com/100339 on how NDK would determine AArch64 CPU features.",
+      "parentUuid": "f993d415_1dc4131f",
+      "revId": "e853a09d3926288fe9b9e73dc4bcd7e830316166",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
