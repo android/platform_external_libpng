@@ -52,6 +52,24 @@
       "revId": "e853a09d3926288fe9b9e73dc4bcd7e830316166",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "79d604dd_f4cff660",
+        "filename": "arm/arm_init.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1002185
+      },
+      "writtenOn": "2014-07-11T12:51:30Z",
+      "side": 1,
+      "message": "In the context of Android, no it isn\u0027t realistically optional. In the context of libpng it might be but would probably be a static not a dynamic test.\n\nFrom the ARM ARM:\n\n\"ARMv8 can support the following levels of support for floating-point and Advanced SIMD instructions:\n* Full floating-point and SIMD support without exception trapping.\n* Full floating-point and SIMD support with exception trapping.\n* No floating-point or SIMD support. This option is licensed only for implementations targeting specialised\nmarkets.\n\nNote\nAll systems that support standard operating systems with rich application environments provide hardware\nsupport for floating-point and Advanced SIMD. It is a requirement of the ARM Procedure Call Standard for\nAArch64, see Procedure Call Standard for the ARM 64-bit Architecture.\"",
+      "parentUuid": "7971a4c6_f9b377d1",
+      "revId": "e853a09d3926288fe9b9e73dc4bcd7e830316166",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
