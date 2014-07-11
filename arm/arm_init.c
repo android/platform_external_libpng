@@ -79,6 +79,11 @@ png_init_filter_functions_neon(png_structp pp, unsigned int bpp)
          {
             static volatile sig_atomic_t no_neon = -1; /* not checked */
 
+#ifdef __aarch64__
+/*	ARMv8-A by default supports NEON hence
+	/proc/cpuinfo features won't list neon */
+			no_neon = 0;
+#endif
             if (no_neon < 0)
                no_neon = !png_have_neon(pp);
 
