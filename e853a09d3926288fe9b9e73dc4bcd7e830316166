@@ -34,6 +34,24 @@
       "revId": "e853a09d3926288fe9b9e73dc4bcd7e830316166",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7971a4c6_f9b377d1",
+        "filename": "arm/arm_init.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2014-07-11T10:27:38Z",
+      "side": 1,
+      "message": "this seems contrary to what i\u0027ve heard. Is neon really optional on aarch64 ? do you have a reference to a doc that says this ?",
+      "parentUuid": "f97cb4a5_0f65b994",
+      "revId": "e853a09d3926288fe9b9e73dc4bcd7e830316166",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
