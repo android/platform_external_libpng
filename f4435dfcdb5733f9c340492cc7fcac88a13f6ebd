@@ -16,6 +16,24 @@
       "revId": "f4435dfcdb5733f9c340492cc7fcac88a13f6ebd",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c57b955e_4266728c",
+        "filename": "png.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 2455,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2015-02-25T15:40:42Z",
+      "side": 1,
+      "message": "Yes, I noticed. The advisory seems to claim the fix in 0.16 is sufficient.\n\nRe: three separate statements and elses. I think in this particular case they have equivalent semantics (since width would like between 0 and PNG_UINT_31_MAX).\n\nLooking at git histories, they\u0027ve flip flopped a few times between \"else if\" and \"if\" and made a few \"code style\" cleanups in the interim. (all of which makes our job harder).",
+      "parentUuid": "85851d8c_60cff233",
+      "revId": "f4435dfcdb5733f9c340492cc7fcac88a13f6ebd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
