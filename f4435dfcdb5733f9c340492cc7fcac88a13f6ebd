@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "85851d8c_60cff233",
+        "filename": "png.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 2455,
+      "author": {
+        "id": 1044488
+      },
+      "writtenOn": "2015-02-25T15:34:42Z",
+      "side": 1,
+      "message": "Just FYI, this if-statement has changed from .16 to .17b (beta), into\n---\n   if (png_gt(((width + 7) \u0026 (~7)),\n       ((PNG_SIZE_MAX\n           - 48        /* big_row_buf hack */\n           - 1)        /* filter byte */\n           / 8)        /* 8-byte RGBA pixels */\n           - 1))       /* extra max_pixel_depth pad */\n---\nAlso, the three if-statements are split into three separate blocks. No \u0027else\u0027.\nNot sure if this has to do with a bug, of if it\u0027s just a more accurate way to do the check.",
+      "revId": "f4435dfcdb5733f9c340492cc7fcac88a13f6ebd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
