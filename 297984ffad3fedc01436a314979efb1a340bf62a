@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "e356daec_fe29cd03",
+        "filename": "Blueprints",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2015-04-09T23:24:23Z",
+      "side": 1,
+      "message": "I am not sure if it\u0027s good idea to combine them.\nI think it may be cleaner if we define them separately and just refer to the same set of source and flags.",
+      "parentUuid": "e356daec_7e131d0f",
+      "range": {
+        "startLine": 23,
+        "startChar": 4,
+        "endLine": 23,
+        "endChar": 25
+      },
+      "revId": "297984ffad3fedc01436a314979efb1a340bf62a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "636d8ab3_4d2cdd90",
         "filename": "Blueprints",
         "patchSetId": 2
