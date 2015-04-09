@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "636d8ab3_ad4011f8",
+        "filename": "Blueprints",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1003981
+      },
+      "writtenOn": "2015-04-09T23:25:24Z",
+      "side": 1,
+      "message": "clearer, I meant, not cleaner, sorry.",
+      "parentUuid": "e356daec_fe29cd03",
+      "range": {
+        "startLine": 23,
+        "startChar": 4,
+        "endLine": 23,
+        "endChar": 25
+      },
+      "revId": "297984ffad3fedc01436a314979efb1a340bf62a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "636d8ab3_4d2cdd90",
         "filename": "Blueprints",
         "patchSetId": 2
