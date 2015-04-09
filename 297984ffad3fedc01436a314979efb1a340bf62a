@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "e356daec_7e131d0f",
+        "filename": "Blueprints",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2015-04-09T23:17:48Z",
+      "side": 1,
+      "message": "The androidmk translator isn\u0027t smart enough to combine libraries into a single cc_library, it just produces cc_library_static, cc_library_shared, cc_library_host_static with the same names, and then I have to fix them up manually.  I didn\u0027t add a way to disable just the shared library on the host when it is needed on the device, it will only affect checkbuilds, but we can add something if necessary.",
+      "parentUuid": "e356daec_fea46d85",
+      "range": {
+        "startLine": 23,
+        "startChar": 4,
+        "endLine": 23,
+        "endChar": 25
+      },
+      "revId": "297984ffad3fedc01436a314979efb1a340bf62a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "636d8ab3_4d2cdd90",
         "filename": "Blueprints",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2015-04-09T23:09:55Z",
       "side": 1,
       "message": "The Android.mk has only target test.",
+      "range": {
+        "startLine": 77,
+        "startChar": 4,
+        "endLine": 77,
+        "endChar": 25
+      },
+      "revId": "297984ffad3fedc01436a314979efb1a340bf62a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e356daec_9e6d2184",
+        "filename": "Blueprints",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2015-04-09T23:17:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "636d8ab3_4d2cdd90",
       "range": {
         "startLine": 77,
         "startChar": 4,
