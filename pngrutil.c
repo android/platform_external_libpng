@@ -4075,10 +4075,11 @@ png_read_IDAT_data(png_structrp png_ptr, png_bytep output,
          break;
       }
 
-      if (ret != Z_OK)
+      if (ret != Z_OK
 #ifdef PNG_INDEX_SUPPORTED
-        if (png_ptr->index && png_ptr->row_number != png_ptr->height - 1)
+        || (png_ptr->index && png_ptr->row_number != png_ptr->height - 1)
 #endif
+      )
       {
          png_zstream_error(png_ptr, ret);
 
