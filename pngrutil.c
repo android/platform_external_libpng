@@ -4076,9 +4076,6 @@ png_read_IDAT_data(png_structrp png_ptr, png_bytep output,
       }
 
       if (ret != Z_OK)
-#ifdef PNG_INDEX_SUPPORTED
-        if (png_ptr->index && png_ptr->row_number != png_ptr->height - 1)
-#endif
       {
          png_zstream_error(png_ptr, ret);
 
@@ -4091,6 +4088,15 @@ png_read_IDAT_data(png_structrp png_ptr, png_bytep output,
             return;
          }
       }
+
+#ifdef PNG_INDEX_SUPPORTED
+      if (png_ptr->index && png_ptr->row_number != png_ptr->height - 1)
+      {
+         png_chunk_error(png_ptr, "IDAT row_number/height mismatch");
+         return;
+      }
+#endif
+
    } while (avail_out > 0);
 
    if (avail_out > 0)
