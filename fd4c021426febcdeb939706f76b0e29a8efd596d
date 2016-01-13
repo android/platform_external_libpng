@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "07495aa4_076a19bb",
+        "filename": "pngrutil.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 4080,
+      "author": {
+        "id": 1023211
+      },
+      "writtenOn": "2016-01-13T22:14:17Z",
+      "side": 1,
+      "message": "Doesn\u0027t this file use 3 spaces everywhere? it\u0027s a really odd choice.\n\nSee http://www.libpng.org/pub/png/libpng-manual.txt\n\nChapter XV)\n\nWe use 3-space indentation, except for continued statements which\nare usually indented the same as the first line of the statement\nplus four more spaces.",
+      "parentUuid": "07b15a0d_7bd7ff1d",
+      "range": {
+        "startLine": 4080,
+        "startChar": 8,
+        "endLine": 4080,
+        "endChar": 9
+      },
+      "revId": "fd4c021426febcdeb939706f76b0e29a8efd596d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e7c1a66d_dac7256d",
         "filename": "pngrutil.c",
         "patchSetId": 3
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "274e5eac_3c492669",
+        "filename": "pngrutil.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 4083,
+      "author": {
+        "id": 1023211
+      },
+      "writtenOn": "2016-01-13T22:14:17Z",
+      "side": 1,
+      "message": "I was up to col 103. libpng coding style says 80 cols. \n\nChapter XV)\nLines do not exceed 80 characters.",
+      "parentUuid": "e7c1a66d_dac7256d",
+      "range": {
+        "startLine": 4082,
+        "startChar": 15,
+        "endLine": 4083,
+        "endChar": 64
+      },
+      "revId": "fd4c021426febcdeb939706f76b0e29a8efd596d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "27b65e05_7cd7f91d",
         "filename": "pngrutil.c",
         "patchSetId": 3
@@ -59,6 +107,30 @@
       "writtenOn": "2016-01-13T21:50:38Z",
       "side": 1,
       "message": "nit: please remove comment",
+      "range": {
+        "startLine": 4099,
+        "startChar": 7,
+        "endLine": 4099,
+        "endChar": 30
+      },
+      "revId": "fd4c021426febcdeb939706f76b0e29a8efd596d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4768b202_b709dbb6",
+        "filename": "pngrutil.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 4099,
+      "author": {
+        "id": 1023211
+      },
+      "writtenOn": "2016-01-13T22:14:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "27b65e05_7cd7f91d",
       "range": {
         "startLine": 4099,
         "startChar": 7,
