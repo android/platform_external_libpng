@@ -4070,15 +4070,17 @@ png_read_IDAT_data(png_structrp png_ptr, png_bytep output,
          png_ptr->mode |= PNG_AFTER_IDAT;
          png_ptr->flags |= PNG_FLAG_ZSTREAM_ENDED;
 
+#ifdef PNG_INDEX_SUPPORTED
+         if (png_ptr->index && png_ptr->row_number != png_ptr->height - 1)
+            png_chunk_error(png_ptr, "IDAT row_number/height mismatch");
+#endif
+
          if (png_ptr->zstream.avail_in > 0 || png_ptr->idat_size > 0)
             png_chunk_benign_error(png_ptr, "Extra compressed data");
          break;
       }
 
       if (ret != Z_OK)
-#ifdef PNG_INDEX_SUPPORTED
-        if (png_ptr->index && png_ptr->row_number != png_ptr->height - 1)
-#endif
       {
          png_zstream_error(png_ptr, ret);
 
