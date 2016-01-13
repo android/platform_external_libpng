@@ -34,6 +34,24 @@
       "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "676db610_139ee326",
+        "filename": "pngrutil.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4093,
+      "author": {
+        "id": 1023211
+      },
+      "writtenOn": "2016-01-13T19:23:59Z",
+      "side": 1,
+      "message": "I was able to verify that your patch fixes the hang with my set of pngs. I don\u0027t have access to any indexed pngs to test. Do you have any with the corruption that this code is guarding against?\n\nI\u0027m not sure this fix fix is correct. It will ignore the inflate() failure for indexed pngs if the condition (ptr-\u003erow_number !\u003d png_ptr-\u003eheight - 1) is *false*, i.e. the metadata is correct, but only zlib failed.\n\nThe #ifdef makes it hard to see what\u0027s going on. I reduced it to:\n\n      if (ret !\u003d Z_OK) {\n         if (png_ptr-\u003eindex) {\n            if (png_ptr-\u003erow_number !\u003d png_ptr-\u003eheight - 1)\n               png_error(png_ptr, png_ptr-\u003ezstream.msg ? png_ptr-\u003ezstream.msg : \"Decompression error\");\n\n            /* ignoring zlib ret value here */\n         } else {\n            png_zstream_error(png_ptr, ret);\n            if (output !\u003d NULL)\n               png_chunk_error(png_ptr, png_ptr-\u003ezstream.msg);\n            else /* checking */\n            {\n               png_chunk_benign_error(png_ptr, png_ptr-\u003ezstream.msg);\n               return;\n            }\n         }\n      }",
+      "parentUuid": "07bebac6_369f7679",
+      "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
