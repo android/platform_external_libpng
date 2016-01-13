@@ -70,6 +70,24 @@
       "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e759a674_578e83ab",
+        "filename": "pngrutil.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4093,
+      "author": {
+        "id": 1023211
+      },
+      "writtenOn": "2016-01-13T20:22:24Z",
+      "side": 1,
+      "message": "OK, that makes sense.\n\nFor case 2) I didn\u0027t realize there was no expectation on ret. So, your patch should work.\n\nThanks for the explanation.",
+      "parentUuid": "c7b822d7_7ceb952b",
+      "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
