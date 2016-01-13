@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4768b202_54c32563",
+        "filename": "pngrutil.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4093,
+      "author": {
+        "id": 1023211
+      },
+      "writtenOn": "2016-01-13T17:49:39Z",
+      "side": 1,
+      "message": "This block may need to be moved inside the if (ret \u003d\u003d Z_STREAM_END) block.\n\nIs it possible for inflate() to return with Z_OK but row_number and height to not be set?",
+      "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
