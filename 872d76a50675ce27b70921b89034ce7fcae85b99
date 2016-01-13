@@ -88,6 +88,24 @@
       "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07e5daf2_61a4d2c5",
+        "filename": "pngrutil.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4093,
+      "author": {
+        "id": 1080023
+      },
+      "writtenOn": "2016-01-13T20:25:27Z",
+      "side": 1,
+      "message": "Thanks for your work in addressing this bug!\n\nIf you want to upload the patch that I\u0027ve provided, I will +1.  Otherwise, you can wait for the fix to drop into AOSP soon.",
+      "parentUuid": "e759a674_578e83ab",
+      "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
