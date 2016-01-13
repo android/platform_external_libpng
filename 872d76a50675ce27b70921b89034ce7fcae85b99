@@ -16,6 +16,24 @@
       "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "07bebac6_369f7679",
+        "filename": "pngrutil.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4093,
+      "author": {
+        "id": 1080023
+      },
+      "writtenOn": "2016-01-13T18:23:35Z",
+      "side": 1,
+      "message": "Yes I believe it does.\n\nCan you apply/verify this fix?\n\n      if (ret !\u003d Z_OK) {\n#ifdef PNG_INDEX_SUPPORTED\n        if (png_ptr-\u003eindex) {\n          if (png_ptr-\u003erow_number !\u003d png_ptr-\u003eheight - 1) {\n            png_error(png_ptr, png_ptr-\u003ezstream.msg ? png_ptr-\u003ezstream.msg : \"Decompression error\");\n          }\n        } else\n#endif\n      {\n         png_zstream_error(png_ptr, ret);\n\n         if (output !\u003d NULL)\n            png_chunk_error(png_ptr, png_ptr-\u003ezstream.msg);\n\n         else /* checking */\n         {\n            png_chunk_benign_error(png_ptr, png_ptr-\u003ezstream.msg);\n            return;\n         }\n      }\n    }\n   } while (avail_out \u003e 0);",
+      "parentUuid": "4768b202_54c32563",
+      "revId": "872d76a50675ce27b70921b89034ce7fcae85b99",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
