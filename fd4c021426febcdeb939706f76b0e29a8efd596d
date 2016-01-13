@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "07b15a0d_7bd7ff1d",
+        "filename": "pngrutil.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 4080,
+      "author": {
+        "id": 1080023
+      },
+      "writtenOn": "2016-01-13T21:50:38Z",
+      "side": 1,
+      "message": "nit: please use two space indents here and throughout",
+      "range": {
+        "startLine": 4080,
+        "startChar": 8,
+        "endLine": 4080,
+        "endChar": 9
+      },
+      "revId": "fd4c021426febcdeb939706f76b0e29a8efd596d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e7c1a66d_dac7256d",
+        "filename": "pngrutil.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 4083,
+      "author": {
+        "id": 1080023
+      },
+      "writtenOn": "2016-01-13T21:50:38Z",
+      "side": 1,
+      "message": "nit: I believe this fits on one line",
+      "range": {
+        "startLine": 4082,
+        "startChar": 15,
+        "endLine": 4083,
+        "endChar": 64
+      },
+      "revId": "fd4c021426febcdeb939706f76b0e29a8efd596d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "27b65e05_7cd7f91d",
+        "filename": "pngrutil.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 4099,
+      "author": {
+        "id": 1080023
+      },
+      "writtenOn": "2016-01-13T21:50:38Z",
+      "side": 1,
+      "message": "nit: please remove comment",
+      "range": {
+        "startLine": 4099,
+        "startChar": 7,
+        "endLine": 4099,
+        "endChar": 30
+      },
+      "revId": "fd4c021426febcdeb939706f76b0e29a8efd596d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
