@@ -2180,7 +2180,7 @@ static const struct
    png_byte    is_broken;
    png_uint_16 intent;
 
-#  define PNG_MD5(a,b,c,d) { a, b, c, d }, (a!=0)||(b!=0)||(c!=0)||(d!=0)
+#  define PNG_MD5(a,b,c,d) { a, b, c, d }, ((a)!=0)||((b)!=0)||((c)!=0)||((d)!=0)
 #  define PNG_ICC_CHECKSUM(adler, crc, md5, intent, broke, date, length, fname)\
       { adler, crc, length, md5, broke, intent },
 

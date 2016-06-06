@@ -346,7 +346,7 @@
  * it with something other than whitespace, you must include the terminating
  * semicolon.
  */
-#  define PNG_UNUSED(param) (void)param;
+#  define PNG_UNUSED(param) (void)(param);
 #endif
 
 /* Just a little check that someone hasn't tried to define something
@@ -504,7 +504,7 @@
 /* This implicitly assumes alignment is always to a power of 2. */
 #ifdef png_alignof
 #  define png_isaligned(ptr, type)\
-   ((((const char*)ptr-(const char*)0) & (png_alignof(type)-1)) == 0)
+   ((((const char*)(ptr)-(const char*)0) & (png_alignof(type)-1)) == 0)
 #else
 #  define png_isaligned(ptr, type) 0
 #endif
@@ -768,7 +768,7 @@
    (void)(((char*)(s))[0]=(char)(((c)>>24) & 0xff), \
    ((char*)(s))[1]=(char)(((c)>>16) & 0xff),\
    ((char*)(s))[2]=(char)(((c)>>8) & 0xff), \
-   ((char*)(s))[3]=(char)((c & 0xff)))
+   ((char*)(s))[3]=(char)(((c) & 0xff)))
 
 /* Do the same but terminate with a null character. */
 #define PNG_CSTRING_FROM_CHUNK(s,c)\
@@ -1561,7 +1561,7 @@ PNG_INTERNAL_FUNCTION(png_charp,png_format_number,(png_const_charp start,
 
 /* Convenience macro that takes an array: */
 #define PNG_FORMAT_NUMBER(buffer,format,number) \
-   png_format_number(buffer, buffer + (sizeof buffer), format, number)
+   png_format_number(buffer, (buffer) + (sizeof (buffer)), format, number)
 
 /* Suggested size for a number buffer (enough for 64 bits and a sign!) */
 #define PNG_NUMBER_BUFFER_SIZE 24

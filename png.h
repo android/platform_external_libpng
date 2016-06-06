@@ -588,9 +588,9 @@ typedef png_text * * png_textpp;
 
 /* Supported compression types for text in PNG files (tEXt, and zTXt).
  * The values of the PNG_TEXT_COMPRESSION_ defines should NOT be changed. */
-#define PNG_TEXT_COMPRESSION_NONE_WR -3
-#define PNG_TEXT_COMPRESSION_zTXt_WR -2
-#define PNG_TEXT_COMPRESSION_NONE    -1
+#define PNG_TEXT_COMPRESSION_NONE_WR (-3)
+#define PNG_TEXT_COMPRESSION_zTXt_WR (-2)
+#define PNG_TEXT_COMPRESSION_NONE    (-1)
 #define PNG_TEXT_COMPRESSION_zTXt     0
 #define PNG_ITXT_COMPRESSION_NONE     1
 #define PNG_ITXT_COMPRESSION_zTXt     2
@@ -1154,8 +1154,8 @@ PNG_FIXED_EXPORT(228, void, png_set_alpha_mode_fixed, (png_structrp png_ptr,
 /* The output_gamma value is a screen gamma in libpng terminology: it expresses
  * how to decode the output values, not how they are encoded.
  */
-#define PNG_DEFAULT_sRGB -1       /* sRGB gamma and color space */
-#define PNG_GAMMA_MAC_18 -2       /* Old Mac '1.8' gamma and color space */
+#define PNG_DEFAULT_sRGB (-1)       /* sRGB gamma and color space */
+#define PNG_GAMMA_MAC_18 (-2)       /* Old Mac '1.8' gamma and color space */
 #define PNG_GAMMA_sRGB   220000   /* Television standards--matches sRGB gamma */
 #define PNG_GAMMA_LINEAR PNG_FP_1 /* Linear */
 #endif

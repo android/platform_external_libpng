@@ -29,7 +29,7 @@
 if (png_ptr->push_length + 4 > png_ptr->buffer_size) \
    { png_push_save_buffer(png_ptr); return; }
 #define PNG_PUSH_SAVE_BUFFER_IF_LT(N) \
-if (png_ptr->buffer_size < N) \
+if (png_ptr->buffer_size < (N)) \
    { png_push_save_buffer(png_ptr); return; }
 
 void PNGAPI

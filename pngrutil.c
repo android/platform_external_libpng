@@ -3273,7 +3273,7 @@ png_combine_row(png_const_structrp png_ptr, png_bytep dp, int display)
          };
 
 #        define MASK(pass,depth,display,png)\
-            ((display)?display_mask[png][DEPTH_INDEX(depth)][pass>>1]:\
+            ((display)?display_mask[png][DEPTH_INDEX(depth)][(pass)>>1]:\
                row_mask[png][DEPTH_INDEX(depth)][pass])
 
 #else /* !PNG_USE_COMPILE_TIME_MASKS */

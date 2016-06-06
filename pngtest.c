@@ -103,7 +103,7 @@ typedef FILE                * png_FILE_p;
 #endif
 
 #ifndef PNG_UNUSED
-#  define PNG_UNUSED(param) (void)param;
+#  define PNG_UNUSED(param) (void)(param);
 #endif
 
 /* Turn on CPU timing
@@ -162,7 +162,7 @@ static int warning_count = 0; /* count calls to png_warning */
 #endif
 
 /* Utility to save typing/errors, the argument must be a name */
-#define MEMZERO(var) ((void)memset(&var, 0, sizeof var))
+#define MEMZERO(var) ((void)memset(&(var), 0, sizeof (var)))
 
 /* Example of using row callbacks to make a simple progress meter */
 static int status_pass = 1;
