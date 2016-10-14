@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dc44a23c_8cffc7f1",
+        "filename": "pngpriv.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 1080023
+      },
+      "writtenOn": "2016-10-14T18:50:17Z",
+      "side": 0,
+      "message": "All of this Intel SSE stuff should not be deleted.\n\nIt\u0027s confusing because this was a part of pngpriv.h in 1.6.22beta.  Now, it has been moved to intel_sse.patch.\n\nWe need to apply that patch in order to not lose SSE support.",
+      "range": {
+        "startLine": 185,
+        "startChar": 0,
+        "endLine": 185,
+        "endChar": 25
+      },
+      "revId": "5a4f8316df580b0dbfe1e4b86819f2a6d68d7e10",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
