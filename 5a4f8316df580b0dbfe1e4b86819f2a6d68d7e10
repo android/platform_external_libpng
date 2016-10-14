@@ -22,6 +22,30 @@
       "revId": "5a4f8316df580b0dbfe1e4b86819f2a6d68d7e10",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bca52e1d_cb98b525",
+        "filename": "pngpriv.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 1092708
+      },
+      "writtenOn": "2016-10-14T19:00:36Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "dc44a23c_8cffc7f1",
+      "range": {
+        "startLine": 185,
+        "startChar": 0,
+        "endLine": 185,
+        "endChar": 25
+      },
+      "revId": "5a4f8316df580b0dbfe1e4b86819f2a6d68d7e10",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
