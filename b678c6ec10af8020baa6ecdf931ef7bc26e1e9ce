@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "7cdd769f_891eb91f",
+        "filename": "README.android",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1092708
+      },
+      "writtenOn": "2016-10-15T14:53:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3c993f38_3eb6a992",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 34
+      },
+      "revId": "b678c6ec10af8020baa6ecdf931ef7bc26e1e9ce",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3c993f38_1e7f2dd1",
         "filename": "README.android",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2016-10-14T22:38:05Z",
       "side": 1,
       "message": "Please update this file.",
+      "range": {
+        "startLine": 9,
+        "startChar": 4,
+        "endLine": 9,
+        "endChar": 18
+      },
+      "revId": "b678c6ec10af8020baa6ecdf931ef7bc26e1e9ce",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7cdd769f_a919fd3b",
+        "filename": "README.android",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1092708
+      },
+      "writtenOn": "2016-10-15T14:53:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3c993f38_1e7f2dd1",
       "range": {
         "startLine": 9,
         "startChar": 4,
