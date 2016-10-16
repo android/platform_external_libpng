@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bcf7ee08_6f8539b9",
+        "filename": "README.android",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1080023
+      },
+      "writtenOn": "2016-10-16T13:34:25Z",
+      "side": 1,
+      "message": "nit: patch",
+      "range": {
+        "startLine": 21,
+        "startChar": 31,
+        "endLine": 21,
+        "endChar": 35
+      },
+      "revId": "ad8026a6576db314e84750eb9f997800fa636b2f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
