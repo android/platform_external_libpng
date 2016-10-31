@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "c6e77223_d546cebe",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2016-10-31T23:49:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6e77223_328ad038",
+      "range": {
+        "startLine": 48,
+        "startChar": 12,
+        "endLine": 48,
+        "endChar": 46
+      },
+      "revId": "2779c2eeab48c35b115cb453cdd19344ea8ca7ee",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c6e77223_b23000b5",
         "filename": "Android.bp",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2016-10-31T23:06:47Z",
       "side": 1,
       "message": "This is in libpng-defaults",
+      "range": {
+        "startLine": 88,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 10
+      },
+      "revId": "2779c2eeab48c35b115cb453cdd19344ea8ca7ee",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c6e77223_f541d2a8",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1002751
+      },
+      "writtenOn": "2016-10-31T23:49:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6e77223_b23000b5",
       "range": {
         "startLine": 88,
         "startChar": 0,
