@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "55d34daf_fb25e14f",
+        "filename": "README.android",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2017-10-06T15:18:00Z",
+      "side": 1,
+      "message": "I find this one a little strange - it appears that we don\u0027t check in some files that aren\u0027t used, but we do check in others that aren\u0027t used. And only this folder is mentioned. (Maybe I am mistaken and all the other stuff that looks new to me actually *is* new since 1.6.25?)\n\nShould I add the rest of the new stuff? My initial thought was that it makes merges simpler if we just add it all, but after doing it a couple times I don\u0027t think it is that much simpler (and it leads to a giant CL, most of which is not really relevant). I\u0027m leaning towards only checking in the stuff that we use, but think perhaps that should be its own CL?",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 17,
+        "endChar": 18
+      },
+      "revId": "6944747e4bd13ddd701b9a3b5d0a876dd37f25a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
