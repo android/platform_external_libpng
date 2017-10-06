@@ -46,6 +46,30 @@
       "revId": "6944747e4bd13ddd701b9a3b5d0a876dd37f25a8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc8efaf1_0dbc96d7",
+        "filename": "README.android",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2017-10-06T16:01:42Z",
+      "side": 1,
+      "message": "\u003e i\u0027d just add it all. i know historically some people liked to not\n \u003e add unused code, but as someone who\u0027s spent many years trying to\n \u003e keep parts of external up to date, i\u0027ve come to the conclusion that\n \u003e it makes that slightly harder without helping in any other way.\n \u003e these days i like to just have everything. it also makes it easier\n \u003e to do a quick diff against the upstream version i believe i have to\n \u003e see that no patches got dropped (and also -- if we have local\n \u003e changes -- to keep those local changes in a checked-in diff for the\n \u003e convenience of the next person).\n\nAgreed. This is easier :)\n\n \u003e \n \u003e the truth is, no human can really review even a change like this\n \u003e with 3k changed lines (unless it\u0027s done patch at a time, in\n \u003e meaningful chunks, as they come in, and most projects just aren\u0027t\n \u003e worth that trouble). an extra few k doesn\u0027t materially change that.\n\nVery good point. Done.",
+      "parentUuid": "b0d73b42_313dce87",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 17,
+        "endChar": 18
+      },
+      "revId": "6944747e4bd13ddd701b9a3b5d0a876dd37f25a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
