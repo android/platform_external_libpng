@@ -1,0 +1,8 @@
+Code-Review+2: Jiyong Park <jiyong@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Tao Bao <tbao@google.com>
+Submitted-by: Tao Bao <tbao@google.com>
+Submitted-at: Thu, 02 Aug 2018 02:07:28 +0000
+Reviewed-on: https://android-review.googlesource.com/718498
+Project: platform/external/libpng
+Branch: refs/heads/master
