@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3a6bc6a6_12986a54",
+        "filename": "METADATA",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-05T16:06:09Z",
+      "side": 1,
+      "message": "Ah, interesting - I was copying from the METADATA for libjpeg-turbo. That one doesn\u0027t have a \"v\", likely because libjpeg-turbo tags it purely as \"2.0.0\"",
+      "parentUuid": "c5f53761_ff58568b",
+      "range": {
+        "startLine": 8,
+        "startChar": 11,
+        "endLine": 8,
+        "endChar": 12
+      },
+      "revId": "0e10300f2083b2e61ef61d3fc183047c7e9d57e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "60ce7ca9_43113d5e",
         "filename": "README.android",
         "patchSetId": 2
@@ -36,6 +60,24 @@
       "writtenOn": "2019-06-05T14:58:36Z",
       "side": 1,
       "message": "(hhb: this sounds like a feature request for the tool --- \"show me differences from the tag in METADATA upstream\".)",
+      "revId": "0e10300f2083b2e61ef61d3fc183047c7e9d57e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "07e69fe3_286fecfb",
+        "filename": "README.android",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2019-06-05T16:06:09Z",
+      "side": 1,
+      "message": "Ooh, I like that!",
+      "parentUuid": "60ce7ca9_43113d5e",
       "revId": "0e10300f2083b2e61ef61d3fc183047c7e9d57e5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
