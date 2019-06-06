@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "ef321173_a0817b61",
+        "filename": "METADATA",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1307957
+      },
+      "writtenOn": "2019-06-06T17:13:08Z",
+      "side": 1,
+      "message": "Yes it needs to match upstream tags. So with the \u0027v\u0027.\n\nIf there\u0027s no similar tag upstream (same prefix / suffix), the tool will try to guess and choose the one with maximum version numbers ignoring prefix / suffix. But in this case it may find v1.7.0betaxx since that\u0027s the greatest.",
+      "parentUuid": "3a6bc6a6_12986a54",
+      "range": {
+        "startLine": 8,
+        "startChar": 11,
+        "endLine": 8,
+        "endChar": 12
+      },
+      "revId": "0e10300f2083b2e61ef61d3fc183047c7e9d57e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "60ce7ca9_43113d5e",
         "filename": "README.android",
         "patchSetId": 2
@@ -81,6 +105,24 @@
       "revId": "0e10300f2083b2e61ef61d3fc183047c7e9d57e5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "865162a2_33e3d830",
+        "filename": "README.android",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1307957
+      },
+      "writtenOn": "2019-06-06T17:13:08Z",
+      "side": 1,
+      "message": "I usually do `git diff v1.6.34...HEAD`\n\nOr in gerrit you can choose \u0027parent2\u0027 -\u003e patchx in a merge change.",
+      "parentUuid": "07e69fe3_286fecfb",
+      "revId": "0e10300f2083b2e61ef61d3fc183047c7e9d57e5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
