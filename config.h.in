@@ -18,9 +18,12 @@
 /* Define to 1 if you have the <memory.h> header file. */
 #undef HAVE_MEMORY_H
 
+<<<<<<< HEAD   (9ef33c Merge "Merge tag 'v1.6.34' into HEAD")
 /* Define to 1 if you have the `memset' function. */
 #undef HAVE_MEMSET
 
+=======
+>>>>>>> BRANCH (a40189 Release libpng version 1.6.37)
 /* Define to 1 if you have the `pow' function. */
 #undef HAVE_POW
 
