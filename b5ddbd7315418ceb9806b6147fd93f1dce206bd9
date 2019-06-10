@@ -1,0 +1,8 @@
+Presubmit-Verified-1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+1: Leon Scroggins <scroggo@google.com>
+Code-Review+2: Haibo Huang <hhb@google.com>
+Submitted-by: Haibo Huang <hhb@google.com>
+Submitted-at: Mon, 10 Jun 2019 18:31:52 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/libpng/+/979968
+Project: platform/external/libpng
+Branch: refs/heads/master
