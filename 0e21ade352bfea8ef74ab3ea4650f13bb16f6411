@@ -1,0 +1,9 @@
+Verified+1: Leon Scroggins <scroggo@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+2: Haibo Huang <hhb@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Leon Scroggins <scroggo@google.com>
+Submitted-at: Thu, 27 Feb 2020 19:16:49 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/libpng/+/1244283
+Project: platform/external/libpng
+Branch: refs/heads/master
