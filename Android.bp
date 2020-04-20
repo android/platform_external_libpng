@@ -33,6 +33,7 @@ cc_defaults {
                 "arm/filter_neon.S",
                 "arm/filter_neon_intrinsics.c",
             ],
+            cflags: ["-O3"],
         },
         arm64: {
             srcs: [
@@ -40,6 +41,7 @@ cc_defaults {
                 "arm/filter_neon.S",
                 "arm/filter_neon_intrinsics.c",
             ],
+            cflags: ["-O3"],
         },
         x86: {
             srcs: [
