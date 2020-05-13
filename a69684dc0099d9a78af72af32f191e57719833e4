@@ -1,0 +1,10 @@
+Autosubmit+1: Elliott Hughes <enh@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+1: Leon Scroggins <scroggo@google.com>
+Code-Review+2: Elliott Hughes <enh@google.com>
+Submitted-by: Elliott Hughes <enh@google.com>
+Submitted-at: Wed, 13 May 2020 15:52:12 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/libpng/+/1309474
+Project: platform/external/libpng
+Branch: refs/heads/master
