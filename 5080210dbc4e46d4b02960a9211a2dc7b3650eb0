@@ -1,0 +1,10 @@
+Autosubmit+1: Elliott Hughes <enh@google.com>
+Code-Review+1: Jonathan Wright <jonathan.wright@arm.com>
+Code-Review+1: Leon Scroggins <scroggo@google.com>
+Code-Review+2: Elliott Hughes <enh@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 19 May 2020 16:14:50 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/external/libpng/+/1301360
+Project: platform/external/libpng
+Branch: refs/heads/master
