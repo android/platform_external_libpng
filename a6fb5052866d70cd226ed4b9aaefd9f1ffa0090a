@@ -52,6 +52,24 @@
       "revId": "a6fb5052866d70cd226ed4b9aaefd9f1ffa0090a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1d6df46b_cacfebcf",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1069991
+      },
+      "writtenOn": "2020-06-11T16:02:20Z",
+      "side": 1,
+      "message": "Would do in separate set of CLs. I have already submitted bunch of CLs with this form (before anyone asked what exactly this means) and have about 20 pending... and they should be ported to rvc...\n\nBut would do the change to comment ASAP.",
+      "parentUuid": "d7da9320_36a7a47c",
+      "revId": "a6fb5052866d70cd226ed4b9aaefd9f1ffa0090a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
