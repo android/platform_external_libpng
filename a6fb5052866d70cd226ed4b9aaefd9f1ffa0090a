@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2ec97d53_a005c68e",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2020-06-11T15:01:11Z",
+      "side": 1,
+      "message": "it\u0027s not clear to me from the bug when that would be?",
+      "revId": "a6fb5052866d70cd226ed4b9aaefd9f1ffa0090a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
