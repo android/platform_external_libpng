@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "525f54ca_3feebbd5",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1012974
+      },
+      "writtenOn": "2020-10-13T13:48:05Z",
+      "side": 1,
+      "message": "Please change this to scroggo@google.com.",
+      "range": {
+        "startLine": 118,
+        "startChar": 13,
+        "endLine": 118,
+        "endChar": 20
+      },
+      "revId": "8a18666f7471b144f02a23404adaef65cc09ef3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
