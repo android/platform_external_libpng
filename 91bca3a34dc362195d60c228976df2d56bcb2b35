@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3175bb3_6670f3f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1398097
+      },
+      "writtenOn": "2020-10-13T17:25:14Z",
+      "side": 1,
+      "message": "Can I get a +2, if everything looks OK now?",
+      "revId": "91bca3a34dc362195d60c228976df2d56bcb2b35",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
