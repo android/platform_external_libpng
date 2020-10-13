@@ -22,6 +22,30 @@
       },
       "revId": "8a18666f7471b144f02a23404adaef65cc09ef3f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5dd572a5_79988c8d",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1398097
+      },
+      "writtenOn": "2020-10-13T15:47:25Z",
+      "side": 1,
+      "message": "Done. Do you know of a good bug component to use? That needs filled in too.",
+      "parentUuid": "525f54ca_3feebbd5",
+      "range": {
+        "startLine": 118,
+        "startChar": 13,
+        "endLine": 118,
+        "endChar": 20
+      },
+      "revId": "8a18666f7471b144f02a23404adaef65cc09ef3f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
