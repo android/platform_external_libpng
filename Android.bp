@@ -1,6 +1,17 @@
 // We need to build this for both the device (as a shared library)
 // and the host (as a static library for tools to use).
 
+package {
+    default_applicable_licenses: ["external_libpng_license"],
+}
+
+license {
+    name: "external_libpng_license",
+    visibility: [":__subpackages__"],
+    license_kinds: ["SPDX-license-identifier-Apache-2.0","SPDX-license-identifier-BSD","SPDX-license-identifier-CC0-1.0","SPDX-license-identifier-MIT","SPDX-license-identifier-W3C","SPDX-license-identifier-Zlib","legacy_permissive","legacy_unencumbered"],
+    license_text: ["LICENSE"],
+}
+
 cc_defaults {
     name: "libpng-defaults",
     exclude_srcs: [
