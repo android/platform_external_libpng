@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4afc302a_668bb7f6",
+        "filename": "project.config",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1086523
+      },
+      "writtenOn": "2021-05-17T07:17:54Z",
+      "side": 1,
+      "message": "I am somewhat surprised that the approvers group members are not already Android Maintainers, but the change is fine if that\u0027s the case.",
+      "range": {
+        "startLine": 9,
+        "startChar": 34,
+        "endLine": 9,
+        "endChar": 68
+      },
+      "revId": "f2536efd2b32c822973a08540f950118736f75b6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
